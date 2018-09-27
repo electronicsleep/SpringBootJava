@@ -1,7 +1,10 @@
-# SpringBootJava
+# SpringBootJava v2.0.5.RELEASE
+
+## Run tests with info
+./gradlew clean test --info
 
 ## Start SpringBoot
-./gradlew build && java -jar build/libs/gs-spring-boot-0.1.0.jar
+./gradlew build && java -jar build/libs/SpringBootJava.jar
 
-## View
+## URL
 http://localhost:8080/
