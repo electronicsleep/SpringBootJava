@@ -1,5 +1,7 @@
 # SpringBootJava v2.0.5.RELEASE
 
+Starting point for SpringBoot
+
 ## Run tests with info
 ./gradlew clean test --info
 
@@ -8,3 +10,7 @@
 
 ## URL
 http://localhost:8080/
+
+## Docs
+https://gradle.org/
+https://spring.io/projects/spring-boot
