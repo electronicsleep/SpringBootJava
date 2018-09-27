@@ -12,5 +12,7 @@ Starting point for SpringBoot
 http://localhost:8080/
 
 ## Docs
+
 https://gradle.org/
+
 https://spring.io/projects/spring-boot
