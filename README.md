@@ -12,11 +12,10 @@ Starting point for SpringBoot
 
 bash docker-start.sh
 
-## URL
+### URL
 http://localhost:8080/
 
-## Docs
-
+### Docs
 https://gradle.org/
 
 https://spring.io/projects/spring-boot
