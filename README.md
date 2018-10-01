@@ -2,11 +2,15 @@
 
 Starting point for SpringBoot
 
-## Run tests with info
+### Run tests with info
 ./gradlew clean test --info
 
-## Start SpringBoot
+### Start SpringBoot
 ./gradlew build && java -jar build/libs/SpringBootJava.jar
+
+### Start with Docker
+
+bash docker-start.sh
 
 ## URL
 http://localhost:8080/
