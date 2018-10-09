@@ -4,7 +4,9 @@ MAINTAINER Chris Robertson https://github.com/electronicsleep
 
 RUN mkdir -p /usr/src/app
 
-RUN apk add openjdk8
+RUN apk update && apk upgrade
+#RUN apk add openjdk8
+RUN apk add openjdk8-jre
 ADD build/libs/SpringBootJava.jar /usr/src/app
 
 WORKDIR /usr/src/app
