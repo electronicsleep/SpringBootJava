@@ -1,4 +1,4 @@
-# SpringBootJava v2.0.5.RELEASE
+# SpringBootJava v2.1.3.RELEASE
 
 Starting point for Spring Boot Java and Docker
 
