@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-./gradlew build 
+gradle build
 set +e
 docker rm springbootjava
 set -e
