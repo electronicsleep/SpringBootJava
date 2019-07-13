@@ -1,6 +1,6 @@
 # SpringBootJava v2.1.3
 
-Starting point for Spring Boot Java and Docker
+Starting point for Spring Boot, Java and Docker.
 
 ### Run tests with info
 
@@ -8,11 +8,11 @@ gradle clean test --info
 
 ### Start SpringBoot
 
-gradle build && java -jar build/libs/SpringBootJava.jar
+./start.sh
 
 ### Start with Docker
 
-bash docker-start.sh
+./docker-start.sh
 
 ### URL
 
