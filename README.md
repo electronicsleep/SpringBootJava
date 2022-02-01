@@ -6,13 +6,13 @@ Starting point for Spring Boot, Java and Docker.
 
 gradle clean test --info
 
-### Start SpringBoot
+### Run 
 
-./start.sh
+./run.sh
 
-### Start with Docker
+### Run Docker
 
-./docker-start.sh
+./docker-run.sh
 
 ### URL
 
