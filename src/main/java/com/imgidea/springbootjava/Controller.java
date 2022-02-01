@@ -23,7 +23,7 @@ public class Controller {
     @RequestMapping("/")
     public String index() {
         logger.info("Root Endpoint");
-        return "Greetings from Spring Boot!";
+        return "Spring Boot";
     }
 
     @RequestMapping("/java")
