@@ -1,4 +1,4 @@
-package springbootjava;
+package com.imgidea.springbootjava;
 
 import java.util.Arrays;
 

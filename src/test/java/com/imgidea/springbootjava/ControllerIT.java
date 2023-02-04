@@ -1,4 +1,4 @@
-package springbootjava;
+package com.imgidea.springbootjava;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;

@@ -1,4 +1,6 @@
-package springbootjava;
+package com.imgidea.springbootjava;
+
+import static com.imgidea.springbootjava.Constants.*;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,43 +34,41 @@ public class Controller {
         return "Greetings from JAVA!";
     }
 
+    @RequestMapping("/status")
+    public String status() {
+        logger.info("StatusPage Endpoint");
+        Status status = new Status();
+        String statusPage = status.Status();
+        return statusPage;
+    }
+
     @RequestMapping("/date")
-    public String return_date() {
+    public String date() {
         logger.info("Date Endpoint");
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
-        String RetString = "DATE: ";
-        return RetString + dateFormat.format(date);
+        String dateString = "DATE: ";
+        return dateString + dateFormat.format(date);
     }
 
     @RequestMapping(value="/health", method=RequestMethod.GET, produces="application/json")
-    public String return_health() {
+    public String health() {
         logger.info("Health Endpoint");
-        return "{\"Health\": \"Ok\"}";
+        return HEALTH;
     }
 
     @RequestMapping(value = "/api/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public String getFoosBySimplePathWithPathVariable(
+    public String getApiId(
             @PathVariable("id") long id) {
-        return "Get a specific row with id=" + id;
+        return "Get row with id=" + id;
     }
 
     @RequestMapping("/page")
     public String Page(@RequestParam(value="content", required=false, defaultValue="") String content, Model model) {
         logger.info("Page Endpoint");
-        content = "this is some test content";
 
-        //content = "Hello Page";
-        model.addAttribute("content", content);
+        content = HTML_HEADER + ABOUT + HTML_FOOTER;
         return content;
     }
-
-    /*
-    @RequestMapping(value = "/api", method.RequestMethod.GET, produces = "application/json")
-    public @ResponseBody Json apiGet(@RequestParam(value="name", required=false, defaultValue="JSON:") String name) {
-        logger.info("API Endpoint");
-        return new Json(counter.incrementAndGet(), String.format(template, name));
-    }
-    */
 }
